@@ -1,0 +1,17 @@
+.team {
+  background-color: $bckgr-bright-color;
+}
+
+.team__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: $bold-color;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #757575;
+  font-size: 16px;
+  letter-spacing: 3%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  display: flex;
+  justify-content: left;
+  text-decoration: none;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-property: transform;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+}
+
+.is-hidden {
+  transform: scale(0);
+  visibility: 0;
+  opacity: 0;
+}

@@ -1,0 +1,109 @@
+.form__label {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $color2;
+}
+
+.form__fieldset {
+  display: flex;
+  align-items: center;
+  width: 448px;
+  margin: 4px 0 10px;
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: $borderRadius;
+  transition: border $animationDuration $animationDuration;
+}
+
+.form__fieldset:has(.form__input:focus) {
+  border: 1px solid $highlight-color;
+}
+
+.form__fieldset:has(.form__input:focus) .form__icon {
+  fill: $highlight-color;
+}
+
+.form__icon {
+  fill: $bold-color;
+}
+
+.form__input {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  border: 0;
+}
+
+.form__input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.form__comment-field {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.form__textarea {
+  margin: 4px 0 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: $borderRadius;
+  transition: border $animationDuration $animationDuration;
+
+  &:focus {
+    border: 1px solid $highlight-color;
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__checkbox-fieldset {
+  margin-bottom: 30px;
+  border: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0 auto 30px;
+  position: relative;
+  display: flex;
+}
+
+.form__checkbox-fieldset:has(.form__checkbox:checked) .form__checkbox-icon {
+  visibility: visible;
+}
+
+.form__checkbox-icon {
+  position: absolute;
+  visibility: hidden;
+  transition-property: visibility;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+}
+
+.form__checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+  visibility: visible;
+  transition-property: visibility;
+
+  &:checked {
+    visibility: hidden;
+  }
+}
+
+.form__link {
+  color: $highlight-color;
+}

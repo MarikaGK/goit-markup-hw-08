@@ -1,0 +1,36 @@
+.socialmedia__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: $bright-color;
+  color: $color4;
+  border-radius: 50%;
+  will-change: background-color, color;
+  transition-property: background-color, color;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+  &:hover,
+  &:focus {
+    background-color: $color1;
+    color: $bright-color;
+    --color4: currentColor;
+  }
+}
+
+.socialmedia__icon {
+  display: block;
+}
+
+.socialmedia__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  will-change: background-color;
+  transition-property: background-color;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+  &:hover,
+  &:focus {
+    background-color: $color1;
+  }
+}

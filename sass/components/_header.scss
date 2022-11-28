@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: $bckgr-bright-color;
+  border-bottom: 1px solid $bckgr-bright-color;
+  padding: 24.5px 0;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: $dark-color;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.logo--blue {
+  color: $highlight-color;
+}
+
+.logo--footer {
+  display: inline-flex;
+  color: $bright-color;
+  padding-bottom: 20px;
+}

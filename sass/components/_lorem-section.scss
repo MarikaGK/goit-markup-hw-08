@@ -1,0 +1,35 @@
+.lorem-section {
+  background-color: $bright-color;
+}
+
+.lorem-section__list {
+  gap: 30px;
+}
+
+.lorem-section__item {
+  text-align: left;
+  width: 270px;
+}
+
+.lorem-section__icon {
+  display: flex;
+  justify-content: center;
+  background-color: $icon-bckgr-color;
+  border-radius: $borderRadius;
+  padding: 25px 0;
+  margin-bottom: 30px;
+}
+
+.lorem-section__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $bold-color;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.lorem-section__text {
+  font-size: 14px;
+  line-height: 1.71;
+}

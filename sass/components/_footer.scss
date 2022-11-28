@@ -1,0 +1,33 @@
+.footer {
+  background-color: $bckgr-dark-color;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: flex;
+  align-items: baseline;
+  gap: 70px;
+
+  &:first-child {
+    padding-top: 50px;
+  }
+
+  &:last-child {
+    padding-bottom: 60px;
+  }
+}
+
+.footer__socialmedia {
+  gap: 10px;
+}
+
+.footer__socialmedia-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $bright-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

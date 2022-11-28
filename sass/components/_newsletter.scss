@@ -1,0 +1,55 @@
+.newsletter {
+  display: flex;
+  align-items: flex-end;
+}
+
+.newsletter__label {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  color: $bright-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 03%;
+  text-transform: uppercase;
+}
+
+.newsletter__input {
+  color: $bright-color;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: $borderRadius;
+  width: 358px;
+  padding: 15px 16px;
+
+  &::placeholder {
+    font-family: Roboto;
+    color: $bright-color;
+    opacity: 0.6;
+  }
+}
+
+.newsletter__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $bright-color;
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 12px;
+  transition-property: box-shadow;
+  transition-duration: animationDuration;
+  transition-timing-function: $animationTimingFunction;
+
+  &:hover,
+  &:focus {
+    box-shadow: 4px 2px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.newsletter__send-icon {
+  display: block;
+  fill: $bright-color;
+  margin-left: 24px;
+}

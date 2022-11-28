@@ -1,0 +1,36 @@
+.ourclients__header {
+  text-align: center;
+  color: $dark-color;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.ourclients__list {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.ourclients__link {
+  display: block;
+  width: 170px;
+  color: $color4;
+  border-radius: $borderRadius;
+  border: 1px solid $color4;
+  padding: 17.71px 32px 13.25px;
+  will-change: border, color;
+  transition-property: border, color;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color1;
+    color: $color1;
+    --color4: currentColor;
+  }
+}
+
+.ourclients__logo {
+  display: inline-flex;
+}

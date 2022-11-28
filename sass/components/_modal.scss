@@ -1,0 +1,35 @@
+.modal__content {
+  position: relative;
+  width: 520px;
+  margin: auto;
+  padding: 40px;
+  background-color: $bright-color;
+}
+
+.modal__header {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $bold-color;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__x-button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
