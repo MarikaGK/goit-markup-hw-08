@@ -5,13 +5,37 @@
 .team__header {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   color: $bold-color;
-  margin-bottom: 50px;
+  margin-bottom: 19px;
 }
 
 .team__list {
-  display: flex;
   justify-content: space-between;
+  & li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .team__header {
+    margin-bottom: 30px;
+  }
+  .team__list {
+    justify-content: space-between;
+    & li:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $computer) {
+  .team__header {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .team__list {
+    justify-content: space-between;
+  }
 }

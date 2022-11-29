@@ -2,6 +2,12 @@
   flex-grow: 1;
 }
 
+@media (max-width: calc(#{$tablet} - 1px)) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation__list {
   color: $bold-color;
 

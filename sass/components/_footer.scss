@@ -17,6 +17,15 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .footer__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
 .footer__socialmedia {
   gap: 10px;
 }

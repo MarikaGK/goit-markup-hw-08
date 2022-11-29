@@ -8,7 +8,21 @@
 
 .lorem-section__item {
   text-align: left;
-  width: 270px;
+  width: 100%;
+  min-width: calc(#{$minWidth} - 30px);
+}
+
+@media (min-width: $tablet) and (max-width: calc(#{$computer} - 1px)) {
+  .lorem-section__item {
+    flex-basis: calc(#{$tablet} / 2 - 60px);
+  }
+}
+
+@media (min-width: $computer) {
+  .lorem-section__item {
+    width: calc((#{$computer} - 120px) / 4);
+    min-width: calc((#{$computer} - 120px) / 4);
+  }
 }
 
 .lorem-section__icon {

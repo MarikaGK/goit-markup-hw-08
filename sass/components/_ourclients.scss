@@ -1,23 +1,25 @@
 .ourclients__header {
   text-align: center;
   color: $dark-color;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .ourclients__list {
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .ourclients__link {
   display: block;
-  width: 170px;
+  width: auto;
   color: $color4;
   border-radius: $borderRadius;
   border: 1px solid $color4;
-  padding: 17.71px 32px 13.25px;
+  padding: 16px 51px;
   will-change: border, color;
   transition-property: border, color;
   transition-duration: $animationDuration;
@@ -31,6 +33,24 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .ourclients__link {
+    width: calc((#{$tablet} - 90px) / 3);
+  }
+}
+
+@media (min-width: $computer) {
+  .ourclients__header {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .ourclients__link {
+    width: calc((#{$computer} - 180px) / 6);
+    padding: 16px 16px;
+  }
+}
+
 .ourclients__logo {
   display: inline-flex;
+  margin: auto;
 }

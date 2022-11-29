@@ -2,6 +2,12 @@
   background-color: $bright-color;
 }
 
+@media (max-width: calc(#{$computer} - 1px)) {
+  .skills-section {
+    display: none;
+  }
+}
+
 .skills-section__header {
   text-align: center;
   font-weight: 700;

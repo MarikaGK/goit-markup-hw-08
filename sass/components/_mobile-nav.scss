@@ -1,0 +1,15 @@
+.mobile-nav {
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+    fill: currentColor;
+  }
+}
+
+@media (min-width: $tablet) {
+  .mobile-nav {
+    display: none;
+  }
+}

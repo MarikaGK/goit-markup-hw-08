@@ -4,28 +4,66 @@ body {
   font-size: 16px;
   letter-spacing: 3%;
   margin: 0 auto;
-  max-width: 1600px;
+  width: 100vw;
+}
+
+.section {
+  width: 100%;
+  min-width: $minWidth;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  min-width: $minWidth;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .list {
-  display: flex;
-  justify-content: left;
   text-decoration: none;
   list-style-type: none;
   list-style-position: inside;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: calc(#{$tablet} - 1px)) {
+  .container {
+    width: 100%;
+    max-width: $mobile;
+  }
+  .list {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .container {
+    width: $tablet;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $computer) {
+  .container {
+    width: $computer;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .list {
+    display: flex;
+    justify-content: left;
+  }
 }
 
 .backdrop {

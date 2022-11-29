@@ -8,6 +8,13 @@
   }
 }
 
+@media (max-width: calc(#{$tablet} - 1px)) {
+  .contact-list {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .contact-list__icon {
   margin-right: 10px;
 }
