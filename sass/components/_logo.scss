@@ -2,7 +2,7 @@
   font-family: "Raleway", sans-serif;
   color: $dark-color;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
 }
 
@@ -14,4 +14,14 @@
   display: inline-flex;
   color: $bright-color;
   padding-bottom: 20px;
+  justify-content: center;
+}
+
+@media (min-width: $computer) {
+  .logo {
+    font-size: 26px;
+  }
+  .logo--footer {
+    justify-content: left;
+  }
 }

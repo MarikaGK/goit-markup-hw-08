@@ -1,6 +1,7 @@
 .newsletter {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsletter__label {
@@ -13,14 +14,15 @@
   line-height: 16px;
   letter-spacing: 03%;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .newsletter__input {
+  width: 450px;
   color: $bright-color;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: $borderRadius;
-  width: 358px;
   padding: 15px 16px;
 
   &::placeholder {
@@ -38,6 +40,7 @@
   font-size: 16px;
   line-height: 30px;
   margin-left: 12px;
+  margin-top: 20px;
   transition-property: box-shadow;
   transition-duration: animationDuration;
   transition-timing-function: $animationTimingFunction;
@@ -52,4 +55,17 @@
   display: block;
   fill: $bright-color;
   margin-left: 24px;
+}
+
+@media (min-width: $computer) {
+  .newsletter {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .newsletter__label {
+    text-align: left;
+  }
+  .newsletter__input {
+    width: 358px;
+  }
 }
