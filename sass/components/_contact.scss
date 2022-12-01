@@ -6,8 +6,12 @@
 
 .contact-list--mobile {
   position: static;
-  justify-self: flex-end;
+  justify-content: end;
   align-self: flex-start;
+
+  &:first-child {
+    color: $highlight-color;
+  }
 }
 
 .contact-list__item--mobile {
@@ -19,6 +23,9 @@
     margin-bottom: 32px;
     font-size: 34px;
     color: $highlight-color;
+  }
+  &:last-child {
+    padding-bottom: 64px;
   }
 }
 
@@ -86,9 +93,9 @@
   }
 }
 
-.contact-list__link--mobile {
-  color: $color2;
-}
+// .contact-list__link--mobile {
+//   color: $color2;
+// }
 
 @media (max-width: calc(#{$tablet} - 1px)) {
   .contact-list {
