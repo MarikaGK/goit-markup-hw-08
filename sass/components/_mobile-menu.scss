@@ -1,10 +1,11 @@
 .mobile-menu {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: $bright-color;
@@ -28,30 +29,60 @@
   right: 15px;
 }
 
+// .mobile-menu__list {
+//   position: static;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   gap: 32px;
+// }
+
+// .mobile-menu__item {
+//   font-size: 40px;
+//   line-height: 1.7px;
+//   font-family: Roboto;
+//   font-weight: 500;
+//   color: $bold-color;
+//   cursor: pointer;
+
+//   &:not(:last-child) {
+//     margin-bottom: 36px;
+//   }
+//   &:hover,
+//   &:focus {
+//     color: $highlight-color;
+//   }
+// }
+
+// .mobile-menu__link {
+//   flex: block;
+//   color: inherit;
+//   text-decoration: none;
+// }
+
 .mobile-menu__list {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: flex-start;
+  gap: 32px;
 }
 
 .mobile-menu__item {
-  font-size: 40px;
-  line-height: 1.7px;
   font-family: Roboto;
+  font-size: 40px;
   font-weight: 500;
-  color: $bold-color;
-
-  &:not(:last-child) {
-    margin-bottom: 36px;
-  }
+  line-height: 1.17;
 }
 
 .mobile-menu__link {
-  align-items: center;
-  color: inherit;
   text-decoration: none;
+  color: $bold-color;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+  }
 }
 
 @media (min-width: $tablet) {

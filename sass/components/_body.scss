@@ -19,6 +19,10 @@ body {
   min-width: $minWidth;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
+  max-width: $mobile;
+  margin: auto;
+  padding: 0 15px;
 }
 
 .list {
@@ -27,20 +31,9 @@ body {
   list-style-position: inside;
   padding: 0;
   margin: 0;
-}
-
-@media (max-width: calc(#{$tablet} - 1px)) {
-  .container {
-    width: 100%;
-    max-width: $mobile;
-    margin: auto;
-    padding: 0 15px;
-  }
-  .list {
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 @media (min-width: $tablet) {
