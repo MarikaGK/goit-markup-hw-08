@@ -1,12 +1,14 @@
 .intro {
-  max-width: 1600px;
+  max-width: $mobile;
+  min-width: $minWidth;
+  width: 100vw;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: $bckgr-dark-color;
   background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-    url("../images/intro-bckgr.jpg");
+    url("../images/intro-bckgr-mobilex1.jpg");
   background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118x;
 }
 
 .intro__items {
@@ -19,9 +21,62 @@
   text-align: center;
   color: $bright-color;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 6%;
   padding-bottom: 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .intro {
+    background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
+      url("../images/intro-bckgr-mobilex2.jpg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    max-width: $tablet;
+    width: $tablet;
+    background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
+      url("../images/intro-bckgr-tabletx1.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .intro {
+    background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
+      url("../images/intro-bckgr-tabletx2.jpg");
+  }
+}
+
+@media (min-width: $computer) {
+  .intro {
+    max-width: $computer;
+    width: $computer;
+    background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
+      url("../images/intro-bckgr-computerx1.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .intro__header {
+    font-size: 44px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $computer) {
+  .intro {
+    background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
+      url("../images/intro-bckgr-computerx2.jpg");
+  }
 }

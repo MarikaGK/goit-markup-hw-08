@@ -48,6 +48,11 @@
 
 @media (min-width: $tablet) {
   .navigation__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
     &:first-child {
       padding-left: 85px;
     }
@@ -56,6 +61,8 @@
 
 @media (min-width: $computer) {
   .navigation__list {
+    justify-content: left;
+
     &:first-child {
       padding-left: 95px;
     }

@@ -39,6 +39,7 @@ body {
 @media (min-width: $tablet) {
   .container {
     width: $tablet;
+    max-width: $tablet;
     margin: auto;
     padding: 0 15px;
   }
@@ -53,7 +54,7 @@ body {
 @media (min-width: $computer) {
   .container {
     width: $computer;
-    margin: 0 auto;
+    max-width: $computer;
   }
   .section {
     padding-top: 94px;

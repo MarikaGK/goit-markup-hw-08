@@ -1,6 +1,6 @@
 .modal__content {
   position: relative;
-  width: 520px;
+  width: 450px;
   margin: auto;
   padding: 40px;
   background-color: $bright-color;
@@ -10,7 +10,7 @@
   text-align: center;
   font-family: Roboto;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   color: $bold-color;
   margin: 0 auto;
   margin-bottom: 12px;
@@ -20,16 +20,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .modal__x-button {
   position: absolute;
-  top: 3%;
-  right: 3%;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (min-width: $computer) {
+  .modal__content {
+    width: 520px;
+    padding: 40px;
+  }
+  .modal__x-button {
+    top: 3%;
+    right: 3%;
+  }
 }
