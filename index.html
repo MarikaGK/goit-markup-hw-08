@@ -40,7 +40,7 @@
           <nav class="mobile-nav">
             <button type="button" class="mobile-nav__button menu-toggle js-open-menu">
             <svg class="mobile-nav__icon" width="24" height="16">
-              <use href="./images/sprite.svg#"></use>
+              <use href="./images/sprite.svg#icon-menu_24px"></use>
             </svg>
           </button>
           </nav>
@@ -49,7 +49,7 @@
 aria-expanded="false"
 aria-controls="mobile-menu">
   <svg class="mobile-menu__icon" width="40px" height="40px">
-    <use href="./images/sprite.svg#"></use>
+    <use href="./images/sprite.svg#icon-close_40px"></use>
   </svg>
 </button>            
 <ul class="list mobile-menu__list">
@@ -230,23 +230,22 @@ aria-controls="mobile-menu">
           <ul class="list skills-section__list">
             <li class="skills-section__item">
               <img class="skills-section__img"
-                src="./images/ourskills1.jpg"
                 alt="Pisanie kodu"
-                width="370"
-                height="294"
-              />
-              <div class="skills-section__description">
-                <p>
+                src="./images/ourskills1@1x.webp"
+                srcset="./images/ourskills1@2x.webp 2x"
+                sizes="370, 294"
+                />
+                <div class="skills-section__description">
+                  <p>
                   Aplikacje komputerowe
                 </p>
               </div>
             </li>
             <li class="skills-section__item">
               <img class="skills-section__img"
-                src="./images/ourskills2.jpg"
-                alt="Makieta aplikacji"
-                width="370"
-                height="294"
+              src="./images/ourskills2@1x.webp"
+              srcset="./images/ourskills2@2x.webp 2x"
+              sizes="370, 294"
               />
               <div class="skills-section__description">
                 <p>
@@ -256,10 +255,9 @@ aria-controls="mobile-menu">
             </li>
             <li class="skills-section__item">
               <img class="skills-section__img"
-                src="./images/ourskills3.jpg"
-                alt="Dopasowanie diazjnu"
-                width="370"
-                height="294"
+              src="./images/ourskills3@1x.webp"
+              srcset="./images/ourskills3@2x.webp 2x"
+              sizes="370, 294"
               />
               <div class="skills-section__description">
                 <p>
@@ -277,29 +275,35 @@ aria-controls="mobile-menu">
             <li class="team-card">
               <figure class="team-card__picture">
                 <img
-                  src="./images/person1.jpg"
-                  alt="That's our Product Designer"
-                  width="270"
-                  height="260"
-                />
-                <figcaption class="team-card__description">
-                  <h3 class="team-card__name">John Doe</h3>
-                  <p class="team-card__text">Product Designer</p>
-                  <ul class="list team-card__socialmedia-list">
-                    <li>
-                      <a class="socialmedia__link" href="#">
-                        <svg class="socialmedia__icon" width="20" height="20">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="socialmedia__link" href="#">
-                        <svg class="socialmedia__icon" width="20" height="20">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
+                class="team-card__img"
+                alt="That's our Product Designer"
+                src="./images/person1mob@1x.webp"
+                srcset="./images/person1mob@1x.webp 450w,
+                ./images/person1mob@2x.webp 900w,
+                ./images/person1tab@1x.webp 354w,
+                ./images/person1tab@2x.webp 708w,
+                  ./images/person1desk@1x.webp 270w,
+                  ./images/person1desk@2x.webp 540w"
+sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 290px"
+/>
+<figcaption class="team-card__description">
+  <h3 class="team-card__name">John Doe</h3>
+  <p class="team-card__text">Product Designer</p>
+  <ul class="list team-card__socialmedia-list">
+    <li>
+      <a class="socialmedia__link" href="#">
+        <svg class="socialmedia__icon" width="20" height="20">
+          <use href="./images/sprite.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="socialmedia__link" href="#">
+        <svg class="socialmedia__icon" width="20" height="20">
+          <use href="./images/sprite.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
                     <li>
                       <a class="socialmedia__link" href="#">
                         <svg class="socialmedia__icon" width="20" height="20">
@@ -321,10 +325,16 @@ aria-controls="mobile-menu">
             <li class="team-card">
               <figure class="team-card__picture">
                 <img
-                src="./images/person4.jpg"
+                class="team-card__img"
                 alt="That's our Frontend Developer"
-                width="270"
-                height="260"
+                src="./images/person4mob@1x.webp"
+                srcset="./images/person4mob@1x.webp 450w,
+                ./images/person4mob@2x.webp 900w,
+                ./images/person4tab@1x.webp 354w,
+                ./images/person4tab@2x.webp 708w,
+                ./images/person4desk@1x.webp 270w,
+                ./images/person4desk@2x.webp 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 290px"
                 />
                 <figcaption class="team-card__description">
                   <h3 class="team-card__name">John Doe</h3>
@@ -362,20 +372,26 @@ aria-controls="mobile-menu">
                 </figure>
               </li>
               <li class="team-card">
-              <figure class="team-card__picture">
-                <img
-                  src="./images/person2.jpg"
+                <figure class="team-card__picture">
+                  <img
+                  class="team-card__img"
                   alt="That's our Marketing specialist"
-                  width="270"
-                  height="260"
-                />
-                <figcaption class="team-card__description">
-                  <h3 class="team-card__name">John Doe</h3>
-                  <p class="team-card__text">Marketing</p>
-                  <ul class="list team-card__socialmedia-list">
-                    <li>
-                      <a class="socialmedia__link" href="#">
-                        <svg class="socialmedia__icon" width="20" height="20">
+                  src="./images/person2mob@1x.webp"
+                  srcset="./images/person2mob@1x.webp 450w,
+                  ./images/person2mob@2x.webp 900w,
+                  ./images/person2tab@1x.webp 354w,
+                  ./images/person2tab@2x.webp 708w,
+                  ./images/person2desk@1x.webp 270w,
+                  ./images/person2desk@2x.webp 540w"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 290px"
+                  />
+                  <figcaption class="team-card__description">
+                    <h3 class="team-card__name">John Doe</h3>
+                    <p class="team-card__text">Marketing</p>
+                    <ul class="list team-card__socialmedia-list">
+                      <li>
+                        <a class="socialmedia__link" href="#">
+                          <svg class="socialmedia__icon" width="20" height="20">
                           <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg>
                       </a>
@@ -408,10 +424,16 @@ aria-controls="mobile-menu">
             <li class="team-card">
               <figure class="team-card__picture">
                 <img
-                src="./images/person3.jpg"
+                class="team-card__img"
                 alt="That's our Product Designer"
-                width="270"
-                height="260"
+                src="./images/person3mob@1x.webp"
+                srcset="./images/person3mob@1x.webp 450w,
+                ./images/person3mob@2x.webp 900w,
+                ./images/person3tab@1x.webp 354w,
+                ./images/person3tab@2x.webp 708w,
+                ./images/person3desk@1x.webp 270w,
+                ./images/person3desk@2x.webp 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 290px"
                 />
                 <figcaption class="team-card__description">
                   <h3 class="team-card__name">John Doe</h3>

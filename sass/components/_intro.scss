@@ -1,11 +1,10 @@
 .intro {
-  max-width: $mobile;
   min-width: $minWidth;
   width: 100vw;
   margin: 0 auto;
   background-color: $bckgr-dark-color;
   background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-    url("../images/intro-bckgr-mobilex1.jpg");
+    url("../images/intro-bckgrmob@1x.webp");
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118x;
@@ -34,16 +33,15 @@
   (min-resolution: 2dppx) {
   .intro {
     background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-      url("../images/intro-bckgr-mobilex2.jpg");
+      url("../images/intro-bckgrmob@2x.webp");
   }
 }
 
 @media (min-width: $tablet) {
   .intro {
-    max-width: $tablet;
-    width: $tablet;
+    width: 100vw;
     background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-      url("../images/intro-bckgr-tabletx1.jpg");
+      url("../images/intro-bckgrtab@1x.webp");
   }
 }
 
@@ -53,16 +51,16 @@
   (min-resolution: 2dppx) and (min-width: $tablet) {
   .intro {
     background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-      url("../images/intro-bckgr-tabletx2.jpg");
+      url("../images/intro-bckgrtab@2x.webp");
   }
 }
 
 @media (min-width: $computer) {
   .intro {
-    max-width: $computer;
-    width: $computer;
+    max-width: 1600px;
+    width: 100vw;
     background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-      url("../images/intro-bckgr-computerx1.jpg");
+      url("../images/intro-bckgrdesk@1x.webp");
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -77,6 +75,6 @@
   (min-resolution: 2dppx) and (min-width: $computer) {
   .intro {
     background-image: linear-gradient(to top, $color5, rgba(0, 0, 0, 0.1)),
-      url("../images/intro-bckgr-computerx2.jpg");
+      url("../images/intro-bckgrdesk@2x.webp");
   }
 }

@@ -8,6 +8,31 @@
   }
 }
 
+.mobile-nav__button {
+  color: $bold-color;
+  fill: currentColor;
+  border: 0;
+  will-change: color;
+  transform: color;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationTimingFunction;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+    fill: currentColor;
+  }
+}
+
+.mobil-nav__icon {
+  fill: currentColor;
+}
+
+.mobile-nav__button:focus .mobil-nav__icon,
+.mobile-nav__button:hover .mobil-nav__icon {
+  fill: currentColor;
+}
+
 @media (min-width: $tablet) {
   .mobile-nav {
     display: none;

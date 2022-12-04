@@ -27,6 +27,26 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  color: $bold-color;
+  background-color: inherit;
+  border: 0;
+  will-change: color;
+  transform: color;
+  transition: transform $animationDuration $animationTimingFunction;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+  }
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+.mobile-menu__x-button:hover .mobile-menu__icon,
+.mobile-menu__x-button:focus .mobile-menu__icon {
+  fill: currentColor;
 }
 
 .mobile-menu__list {
