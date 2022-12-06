@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   overflow: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
@@ -15,6 +15,7 @@
   transition: transform $animationDuration $animationTimingFunction;
 
   &.is-open {
+    display: flex;
     transform: translateX(0);
   }
 }
